@@ -1,0 +1,6 @@
+ascii-magic==2.3.0
+colorama==0.4.6
+cowsay==6.1
+faker==37.4.0
+pillow==11.3.0
+tzdata==2025.2

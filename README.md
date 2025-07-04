@@ -1,2 +1,0 @@
-# pypg
-random python scripts
