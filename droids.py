@@ -24,13 +24,8 @@ def droid_talk(words):
     cowsay.draw(words, droids)
 
 if __name__ == "__main__":
-    try:
-        # Attempt to access sys.argv[1]
-        argument = sys.argv[1]
-        # print(f"The argument provided is: {argument}")
-    except IndexError:
-        print("Error: You must provide exactly one command-line argument.")
-        print("Usage: python my_script.py <your_argument>")
-        sys.exit(1)
-
-    droid_talk(argument)
+    
+    if len(sys.argv) == 2:
+        droid_talk(sys.argv[1])
+    else:
+        print("Usage: python droids.py <argument>")
